@@ -139,5 +139,11 @@ namespace lab1.calculator
             if (textBox3.Text.Length == 0)
                 textBox3.Text = "0";
         }
+
+        private void ddToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            folderBrowserDialog1.ShowDialog();
+            Console.WriteLine(folderBrowserDialog1.SelectedPath);
+        }
     }
 }
